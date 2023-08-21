@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    
+
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="about_us.html" />
+    <link rel="stylesheet" href="general_q&a.html" />
+    <link rel="stylesheet" href="bespoke_services.html" />
+    <link rel="stylesheet" href="ready_to_wear.html" />
+    <link rel="stylesheet" href="accessories.html" />
+    <link rel="stylesheet" href="css/general_style.css" />
+    <link rel="stylesheet" href="css/home_style.css" />
+    <link rel="stylesheet" href="css/content_style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/about_us.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="header-logo-box">
+          <a href="index.html" class="heading-logo">
+            <img
+              class="logo"
+              alt="company logo"
+              src="images/company_logo.png"
+            />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="index.html">Home</a></li>
+
+            <li id="shop-sbubmenu">
+              <a class="main-nav-link shop-drop-down" href="#">Shop</a>
+              <ul class="submenu">
+                <div>
+                  <li>
+                    <a class="sub-link menu-nav-link" onclick="showPopup()"
+                      >Bespoke Clothing</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sub-link menu-nav-link" href="readyMadeShop.html"
+                      >Ready to Wear</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="menu-nav-link" href="accessories.html"
+                      >Accessories</a
+                    >
+                  </li> -->
+                </div>
+              </ul>
+            </li>
+
+            <li>
+              <a class="main-nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li><a class="main-nav-link" href="#">Blog</a></li>
+
+            <li>
+              <a class="main-nav-link" href="general_q&a.html">General Q & A</a>
+            </li>
+
+            <li><a class="main-nav-link" href="#">Contact</a></li>
+
+            <!-- <li>
+              <a class="main-nav-link nav-cta btn btn-primary" href="#"
+                >Sign Up</a
+              >
+            </li>
+            <li>
+              <a class="main-nav-link nav-cta btn btn-secondary" href="#"
+                >Login</a
+              >
+            </li> -->
+            <div class="marker"></div>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-search">
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-bar">
+          <input class="search-bar-type" type="text" placeholder="Search" />
+          <button class="btn-primary" type="submit">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </div>
+
+        <a href="cart.html">
+          <div class="cart">
+            <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+            <div id="cartAmount" class="cart-amount">0</div>
+          </div>
+        </a>
+      </div>
+      <!-- POP UP//////////////////////////////////// -->
+
+      <div id="bespoke-popup" class="bespoke-popup">
+        <div class="bepo">
+          <div class="bespoke-popup-container">
+            <h2>
+              Welcome<br />
+              to Bespoke Clothing
+            </h2>
+
+            <p>
+              Would you like to Book an appointment for your measurement or
+              Submit your measurements to us online?
+            </p>
+
+            <div class="btn-space">
+              <a
+                class="btn btn-primary book-measurement"
+                href="bespoke_services_booking.html#split-left"
+              >
+                Home Appointment
+              </a>
+              <a
+                class="btn btn-primary book-measurement"
+                href="bespoke_services_booking.html#split-right"
+              >
+                Store Appointment
+              </a>
+              <a class="btn btn-primary submit-measurement" href="#">
+                Submit Measurements
+              </a>
+            </div>
+            <a class="goback" href="#" onclick="location.reload()">
+              Go back &#8592;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- POP UP//////////////////////////////////// -->
+    </header>
+    <main>
+      <section class="section-width section about-us-section">
+        <h2>About Us</h2>
+        <p class="sub-heading">Get to know us better</p>
+        <div class="aboutUsBox">
+          
+          <div class="aboutUsDesc">
+            <h3>A little About Us!</h3>
+            <p>
+              Welcome to our premier online fashion boutique, where style meets
+              individuality. Discover bespoke clothing, ready-to-wear garments,
+              and accessories that reflect your unique taste. Our curated
+              collection ensures exceptional craftsmanship and attention to
+              detail. Find the perfect outfit for any occasion, complete with
+              exquisite accessories. Enjoy a seamless shopping experience with
+              personalized styling advice and exceptional customer service.
+              Experience the joy of personalized style and exceptional quality
+              at our fashion webpage.
+            </p>
+          </div>
+          <div class="aboutUsImage-box">
+            <image
+              class="aboutUsImage"
+              src="images/pexels-athena-2043590.jpg"
+              width="300px"
+              alt="hand reaching for a book"
+            ></image>
+          </div>
+        </div>
+      </section>
+      <!-- ////////////////////// -->
+      <section class="blind section section-width">
+        <p class="sub-heading">Check out our most popular products</p>
+
+        <div class="shop" id="shop"></div>
+      </section>
+      <!-- ///////////////////////////////////////////// -->
+      <section class="section ">
+        <h2>Meet the Team</h2>
+        <p class="sub-heading">Meet our team of dedicated proffessionals </p>
+        <div class="team">
+        <div id="team-card-container" class="team-card-container">
+          <div id="blank" class=" team-card-box"></div>
+          <div class="team-card-box">
+            <img class="team-pic" src="/images/team/doofan.png" alt="picture of team member" width="150rem"/>
+            <div class="team-name">Doofan Sonia Omonya</div>
+            <div class="team-position">CEO</div>
+            <ul class="at-social">
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                    >
+                    </a></li>
+              </ul>
+
+            </ul>
+          </div>
+          <div id="blank" class=" team-card-box"></div>
+          <div class="team-card-box">
+            <img class="team-pic" src="/images/team/ehi.png" alt="picture of team member" width="150rem"/>
+            <div class="team-name">Ehi Confidence Onoja</div>
+            <div class="team-position">Manager</div>
+            <ul class="at-social">
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                    >
+                    </a></li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="team-card-box">
+            <img class="team-pic" src="/images/team/blessing.jpg" alt="picture of team member" width="150rem"/>
+            <div class="team-name">Blessing Lorem</div>
+            <div class="team-position">Lorem</div>
+            <ul class="at-social">
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                    >
+                    </a></li>
+              </ul>
+
+            </ul>
+          </div>
+          <div class="team-card-box">
+            <img class="team-pic" src="/images/team/deborah.png" alt="picture of team member" width="150rem"/>
+            <div class="team-name">Deborah Lorem  </div>
+            <div class="team-position">Lorem</div>
+            <ul class="at-social">
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                    >
+                    </a></li>
+                <li class="at-social__item"><a href=""><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                    >
+                    </a></li>
+              </ul>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- /////////////////////////////////////////////// -->
+      <section class="contact-us" id="">
+        <h2>Contact Us</h2>
+        <p class="sub-heading">Get in touch with us</p>
+        <div class="contact-background">
+          <div class="contact-us-container">
+            <div id="contact-us-box" class="contact-us-box">
+              <a class="map" href="https://goo.gl/maps/YwTg56aaxMqWWHJY9" target="_blank"><div id="map-image-box" class="map-image-box"><img class="map-image" src="images/map-image.png" alt="picture of map" width="400px"/><span class="map-link-btn">click to open map</span></div></a>
+              
+              <div id="social-container" class="social-container">
+              <a href="https://www.instagram.com/doofan_wizneyglory/" class="social-link" target="_blank">
+                <div class="social-box">
+                  <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                  
+                  <p>doofan_wizneyglory</p>
+                  <span class="social-link-btn">click to open instagram</span>
+                </div>
+              </a>
+             <a href="https://api.whatsapp.com/send?phone=+2347038177287" class="social-link" target="_blank">
+              <div class="social-box">
+                <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+                >
+                <p>+2347038177287</p>
+                <span class="social-link-btn">click to open whatsapp</span>
+              </div>
+             </a>
+              <a href="https://web.facebook.com/DoofanSonia" class="social-link" target="_blank">
+              <div class="social-box">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                >
+                <p >Doofan Wizney Glory</p>
+                <span class="social-link-btn">click to open facebook</span>
+              </div>
+              </a>
+              <a href="mailto:wizneyglory@gmail.com" class="social-link">
+              <div class="social-box">
+                <ion-icon class="social-icon" name="mail-outline"></ion-icon
+                >
+                <p >wizneyglory@gmail.com</p>
+                <span class="social-link-btn">click to send an email</span>
+              </div>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+      </section>
+     
+      <!-- ////////////////////////////////////////////// -->
+      <section class="blind section section-width">
+        <p class="sub-heading">Check out our most popular products</p>
+ 
+     <div class="shop" id="shop"></div>
+   </section>
+    </main>
+
+    <footer class="section footer">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="company logo"
+              src="/images/company_logo.png"
+              width="60px"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="mail-outline"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> by Wizney Glory,
+            Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">Lorem ipsum dolor sit, amet consectetur adipi</p>
+            <p>
+              <a class="footer-link" href="tel:101-010-101">101-010-101</a
+              ><br />
+              <a class="footer-link" href="mailto:wizneyglory.com"
+                >hello@wizneyglory.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Menu</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">Bespoke Clothing</a></li>
+            <li><a class="footer-link" href="#">Ready to Wear</a></li>
+            <li><a class="footer-link" href="#">Accessories</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="about_us.html">About Wizney Glory</a>
+            </li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Business partners</a></li>
+            <!-- <li><a class="footer-link" href="#">Careers</a></li> -->
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">General Q & A </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    
+    <script src="src/script.js"></script>
+    <script src="src/testimonial-carousel.js"></script>
+    <script src="src/readyMadeItemsData.js"></script>
+    <script src="src/main.js"></script>
+    
+
+  </body>
+</html>

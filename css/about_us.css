@@ -1,0 +1,222 @@
+.team {
+  /* background-color: #fff; */
+  max-width: 96rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.team-card-container {
+  background-color: #fff;
+  background-color: #493a3a;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.team-card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 30rem;
+  height: 100%;
+  background-color: #fff;
+  /* background-color: #fae1e1; */
+  border-radius: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  box-shadow: #fbe7e7 0px 0px 0px 2px;
+}
+.team-pic {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  background-color: #fae1e1;
+}
+.team-name {
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: "Abril Fatface", cursive;
+}
+.team-position {
+  line-height: 01rem;
+  margin-bottom: 2rem;
+}
+.at-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  opacity: 0;
+  transition: all 1s;
+}
+.team-card-box:hover .at-social {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.3s;
+}
+.team-card-box:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px, #fbe7e7 0px 0px 0px 2px;
+}
+.social-icon {
+  color: #927474;
+  height: 3rem;
+  width: 3rem;
+}
+
+/* contact us////////////////////////////////////////// */
+.contact-background {
+  min-height: 40rem;
+  padding: 4rem 2rem 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#181313c1, #181313c3),
+    url(/images/mapimagebackground.jpg);
+  background-size: cover;
+  z-index: 2;
+}
+.contact-us-container {
+  max-width: 120rem;
+}
+.contact-us-box {
+  background-color: #312727;
+  background-color: #fef9f962;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: auto;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.map-image {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.map-image-box {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 56rem;
+  height: 100%;
+}
+.social-container {
+  /* background-color: beige; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.1rem 0 0.1rem 0;
+  /* padding: 1rem 0 1rem 0; */
+}
+.social-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  /* gap: 1rem; */
+  padding: 1.5rem;
+  position: relative;
+}
+
+.social-box:hover {
+  background-color: #f4c2c2;
+  transition: all 0.3s;
+}
+.social-box:hover .social-link-btn {
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.contact-link {
+  display: flex;
+}
+
+.social-link-btn {
+  color: #f4c2c2;
+  font-size: 1rem;
+  position: absolute;
+  /* top: 50%; */
+  right: 44%;
+  transform: translate(80%, 60%);
+}
+.map-link-btn {
+  bottom: 5%;
+  right: 2.5%;
+  position: absolute;
+  transform: translate(0%, 0%);
+  background-color: #f4c2c2;
+  color: #927474;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+.map-link-btn:hover {
+  background-color: #927474;
+  color: #f4c2c2;
+  transition: all 0.3s;
+}
+/* ///////////////////////////////////////////////////////// */
+
+.customer-care-container {
+  background-color: #312727;
+  background-color: #fef9f962;
+  width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  margin: auto;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.customer-care-container a {
+  width: 100%;
+}
+
+.customer-care-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  /* gap: 1rem; */
+  padding: 1.5rem;
+  position: relative;
+}
+
+.customer-care-box:hover {
+  background-color: #f4c2c2;
+  transition: all 0.3s;
+}
+.customer-care-box:hover .social-link-btn {
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.contact-link {
+  display: flex;
+}

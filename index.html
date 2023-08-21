@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wizney Glory Online Store</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mali&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.html" />
+    <link rel="stylesheet" href="about_us.html" />
+    <link rel="stylesheet" href="general_q&a.html" />
+    <link rel="stylesheet" href="bespoke_services.html" />
+    <link rel="stylesheet" href="readymade.html" />
+    <link rel="stylesheet" href="accessories.html" />
+    <link rel="stylesheet" href="css/general_style.css" />
+    <link rel="stylesheet" href="css/home_style.css" />
+    <link rel="stylesheet" href="css/content_style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/about_us.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-box">
+        <div class="header-logo-box">
+          <a href="index.html" class="heading-logo">
+            <img
+              class="logo"
+              alt="company logo"
+              src="images/company_logo.png"
+            />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="index.html">Home</a></li>
+
+            <li id="shop-sbubmenu">
+              <a class="main-nav-link shop-drop-down" href="#">Shop</a>
+              <ul class="submenu">
+                <div>
+                  <li>
+                    <a class="sub-link menu-nav-link" onclick="showPopup()"
+                      >Bespoke Clothing</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="sub-link menu-nav-link" href="readyMadeShop.html"
+                      >Ready to Wear</a
+                    >
+                  </li>
+                  <!-- <li>
+                    <a class="menu-nav-link" href="accessories.html"
+                      >Accessories</a
+                    >
+                  </li> -->
+                </div>
+              </ul>
+            </li>
+
+            <li>
+              <a class="main-nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li><a class="main-nav-link" href="#">Blog</a></li>
+
+            <li>
+              <a class="main-nav-link" href="general_q&a.html">General Q & A</a>
+            </li>
+
+            <li><a class="main-nav-link" href="#">Contact</a></li>
+
+            <!-- <li>
+              <a class="main-nav-link nav-cta btn btn-primary" href="#"
+                >Sign Up</a
+              >
+            </li>
+            <li>
+              <a class="main-nav-link nav-cta btn btn-secondary" href="#"
+                >Login</a
+              >
+            </li> -->
+            <div class="marker"></div>
+          </ul>
+        </nav>
+      </div>
+      <div class="cart-search">
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+        <div class="search-bar">
+          <input class="search-bar-type" type="text" placeholder="Search" />
+          <button class="btn-primary" type="submit">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </div>
+
+        <a href="cart.html">
+          <div class="cart">
+            <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+            <div id="cartAmount" class="cart-amount">0</div>
+          </div>
+        </a>
+      </div>
+      <!-- POP UP//////////////////////////////////// -->
+
+      <div id="bespoke-popup" class="bespoke-popup">
+        <div class="bepo">
+          <div class="bespoke-popup-container">
+            <h2>
+              Welcome<br />
+              to Bespoke Clothing
+            </h2>
+
+            <p>
+              Would you like to Book an appointment for your measurement or
+              Submit your measurements to us online?
+            </p>
+          </div>
+          <div class="btn-space">
+            <a
+              class="btn btn-primary book-measurement"
+              href="bespoke_services_booking.html#split-left"
+            >
+              Home Appointment
+            </a>
+            <a
+              class="btn btn-primary book-measurement"
+              href="bespoke_services_booking.html#split-right"
+            >
+              Store Appointment
+            </a>
+            <a class="btn btn-primary submit-measurement" href="#">
+              Submit Measurements
+            </a>
+          </div>
+          <a class="goback" href="#" onclick="location.reload()">
+            Go back &#8592;
+          </a>
+        </div>
+      </div>
+
+      <!-- POP UP//////////////////////////////////// -->
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="h1-container">
+            <p>Unleash your style<span>.</span></p>
+            <h1>
+              Where Fashion<br />
+              Meets Elegance
+            </h1>
+            <a id="CTA-btn" class="btn btn-primary" href="readyMadeShop.html"
+              >Start Shopping
+              <lord-icon
+                src="https://cdn.lordicon.com/jxwksgwv.json"
+                trigger="loop"
+                delay="500"
+                colors="primary:#493a3a"
+                style="width: 30px; height: 25px"
+              >
+              </lord-icon
+            ></a>
+          </div>
+          <img
+            class="hero-image"
+            src="images/hero_image1.png"
+            height="550px"
+            alt="lady in overall"
+          />
+        </div>
+      </section>
+      <!-- //////////////////////////////////////////////////////////////// -->
+      <section class="blind section section-width">
+        <p class="sub-heading">Check out our most popular products</p>
+
+        <div class="shop" id="shop"></div>
+      </section>
+      <!-- /////////////////////////////////////////////////////////////// -->
+      <section class="shop-section">
+        <h2>Shop</h2>
+        <p class="sub-heading">Satisfy your fashion needs with our services</p>
+        <div class="services-container">
+          <div class="services">
+            <div class="flip-card-container">
+              <div class="flip-card-box flip-left">
+                <div class="flip-card">
+                  <div class="flip-card-front">
+                    <h3>Bespoke Services</h3>
+                    <div class="divide-line"></div>
+                    <p>Discover a world of personalized style</p>
+                    <a
+                      onclick="showPopup()"
+                      id="flip-btn"
+                      class="flip-btn btn btn-primary"
+                      >Personalize Now
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#493a3a"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Bespoke Services</h3>
+                    <p>
+                      Experience personalized excellence with our bespoke
+                      services. Tailored exclusively to your unique needs.
+                      <br />Discover a world of possibilities as our expert
+                      artisans craft one-of-a-kind creations just for you.<br />
+                      From personalized designs and sizes to exclusive materials
+                      and finishes, our bespoke services ensure your vision
+                      becomes a reality.
+                    </p>
+                    <a
+                      onclick="showPopup()"
+                      id="flip-btn"
+                      class="flip-btn-back flip-btn btn btn-primary"
+                      >Personalize Now
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#927474"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-box flip-left">
+                <div class="flip-card">
+                  <div class="flip-card-front">
+                    <h3>Ready-Made <br />Collection</h3>
+                    <div class="divide-line"></div>
+                    <p>Discover a world of personalized style</p>
+                    <a
+                      id="flip-btn"
+                      class="flip-btn btn btn-primary"
+                      href="readyMadeShop.html"
+                      >Start Shopping
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#493a3a"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Ready-Made</h3>
+                    <p>
+                      Discover a curated collection of stylish garments for men,
+                      women, and children. From trendy tops to smart suits, we
+                      have it all. We prioritize quality, ensuring durable and
+                      fashionable pieces. Find a wide range of styles, colors,
+                      and patterns to suit your taste. With detailed product
+                      descriptions, easy filtering options, and excellent
+                      customer service, shopping is a breeze. Start exploring
+                      today!
+                    </p>
+                    <a
+                      id="flip-btn"
+                      class="flip-btn-back flip-btn btn btn-primary"
+                      href="readyMadeShop.html"
+                      >Start Shopping
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#927474"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-card-box flip-left">
+                <div class="flip-card">
+                  <div class="flip-card-front">
+                    <h3>Accessories</h3>
+                    <div class="divide-line"></div>
+                    <p>Discover a world of personalized style</p>
+                    <a
+                      id="flip-btn"
+                      class="flip-btn btn btn-primary"
+                      href="readyMadeShop.html"
+                      >Start Shopping
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#493a3a"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                  <div class="flip-card-back">
+                    <h3>Accessories</h3>
+                    <p>
+                      Welcome to our online fashion store's accessories section.
+                      Explore our curated collection of jewelry, handbags,
+                      sunglasses, scarves, hats, belts, watches, and more.
+                      Discover the perfect accessory to elevate your style and
+                      make a lasting impression. With our fashionable and
+                      functional pieces, you can effortlessly express your
+                      unique style.
+                    </p>
+                    <a
+                      id="flip-btn"
+                      class="flip-btn-back flip-btn btn btn-primary"
+                      href="readyMadeShop.html"
+                      >Start Shopping
+                      <lord-icon
+                        src="https://cdn.lordicon.com/jxwksgwv.json"
+                        trigger="loop"
+                        delay="500"
+                        colors="primary:#927474"
+                        style="width: 30px; height: 25px"
+                      >
+                      </lord-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ////////////////////////////////////////////////////////////// -->
+      <section class="section-width section about-us-section">
+        <h2>About Us</h2>
+        <p class="sub-heading">Get to know us better</p>
+        <div class="aboutUsBox">
+          <div class="aboutUsDesc">
+            <h3>A little About Us!</h3>
+            <p>
+              Welcome to our premier online fashion boutique, where style meets
+              individuality. Discover bespoke clothing, ready-to-wear garments,
+              and accessories that reflect your unique taste. Our curated
+              collection ensures exceptional craftsmanship and attention to
+              detail. Find the perfect outfit for any occasion, complete with
+              exquisite accessories. Enjoy a seamless shopping experience with
+              personalized styling advice and exceptional customer service.
+              Experience the joy of personalized style and exceptional quality
+              at our fashion webpage.
+            </p>
+          </div>
+          <div class="aboutUsImage-box">
+            <image
+              class="aboutUsImage"
+              src="images/pexels-athena-2043590.jpg"
+              width="300px"
+              alt="hand reaching for a book"
+            ></image>
+          </div>
+        </div>
+      </section>
+      <!-- ///////////////////////////////////////////////////////////// -->
+      <section class="reviews-section">
+        <div class="reviews">
+          <h2>Reviews</h2>
+          <p class="sub-heading">See what our clients have to say</p>
+          <div class="review-background">
+            <div class="reviews-container">
+              <div class="review-box">
+                <img src="images/clients/ben.jpg" class="reviewers-image" />
+                <p class="review-text">
+                  Horizon is, in my opinion, the easiest platform out there in
+                  the crypto investment space. I've been using it since 2019 and
+                  have never had any problems. The Horizon quick updates are in
+                  real time and leave you rest assured.
+                </p>
+
+                <p class="reviewers-name">— Ben Cook</p>
+                <div class="progress-bar"></div>
+              </div>
+
+              <div class="review-box2">
+                <img
+                  src="images/clients/customer-5.jpg"
+                  class="reviewers-image2"
+                />
+                <p class="review-text2">
+                  esse ipsa sed repellat nisi deserunt vero eligendi, assumenda
+                  nulla dignissimos quaerat omnis commodi cum hic laudantium
+                  provident.Dignissimos, libero?
+                </p>
+
+                <p class="reviewers-name2">— John Doe</p>
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ////////////////////////////////////////////////////////////// -->
+    </main>
+
+    <footer class="section footer">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="company logo"
+              src="/images/company_logo.png"
+              width="60px"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="mail-outline"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2022</span> by Wizney Glory,
+            Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">Lorem ipsum dolor sit, amet consectetur adipi</p>
+            <p>
+              <a class="footer-link" href="tel:101-010-101">101-010-101</a
+              ><br />
+              <a class="footer-link" href="mailto:wizneyglory.com"
+                >hello@wizneyglory.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Menu</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">Bespoke Clothing</a></li>
+            <li><a class="footer-link" href="#">Ready to Wear</a></li>
+            <li><a class="footer-link" href="#">Accessories</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="about_us.html">About Wizney Glory</a>
+            </li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Business partners</a></li>
+            <!-- <li><a class="footer-link" href="#">Careers</a></li> -->
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">General Q & A </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="src/script.js"></script>
+    <script src="src/testimonial-carousel.js"></script>
+    <script src="src/readyMadeItemsData.js"></script>
+    <script src="src/main.js"></script>
+
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    <!-- <script>
+      generateShop(popularData, "popular-shop");
+    </script> -->
+  </body>
+</html>
